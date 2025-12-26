@@ -16,11 +16,14 @@
     .btn-secondary:hover { background-color: white; color: black; }
     .container { max-width: 1100px; margin: 0 auto; }
     .grid { display: grid; gap: 20px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
     .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
     footer { background: #111; color: #fff; padding: 40px 20px; }
     footer a { color: white; margin: 0 10px; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
     h1, h2 { margin-bottom: 20px; }
+    img.logo { max-width: 200px; margin-bottom: 20px; }
+    .card { background:white; padding:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.15);}
   </style>
 </head>
 <body>
@@ -28,21 +31,120 @@
 <!-- HERO SECTION -->
 <section class="bg-blue text-center">
   <div class="container">
+    <img src="https://via.placeholder.com/200x60?text=ShotCraft+Logo" alt="ShotCraft Logo" class="logo">
     <h1>Train Smarter. Jump Higher. Play Faster.</h1>
-    <p>ShotCraft uses AI-powered basketball analysis and elite training systems to help players improve shooting, athleticism, and performance.</p>
+    <p>ShotCraft combines AI-powered basketball analysis with elite training systems to improve shooting, athleticism, and overall performance.</p>
     <button class="btn-primary">Start Training</button>
     <button class="btn-secondary">Join the Waitlist</button>
   </div>
 </section>
 
-<!-- FEATURES SECTION -->
+<!-- WHAT IT DOES SECTION -->
 <section class="text-center">
   <div class="container">
-    <h2>What ShotCraft Helps You Improve</h2>
+    <h2>What ShotCraft Does</h2>
     <div class="grid grid-3">
-      <div>Shooting form and consistency</div>
-      <div>Vertical jump and explosiveness</div>
-      <div>Speed, agility, and movement mechanics</div>
-      <div>Strength and athletic performance</div>
-      <div>Injury prevention and posture correction</div>
-      <div>Confidence and basketball IQ</div>
+      <div class="card"><strong>Analyze Your Shots</strong><br>Upload videos and get AI-powered feedback on shooting form, jumps, and movement.</div>
+      <div class="card"><strong>Custom Training Plans</strong><br>Receive drills and workouts tailored to your strengths, weaknesses, and goals.</div>
+      <div class="card"><strong>Track Progress</strong><br>Monitor improvement in vertical jump, speed, shooting accuracy, and athletic performance.</div>
+      <div class="card"><strong>Injury Prevention</strong><br>Correct posture, fix knee/hip alignment, and reduce risk of injuries.</div>
+      <div class="card"><strong>Coach Tools</strong><br>Enable coaches to track player progress, analyze team performance, and provide structured training.</div>
+      <div class="card"><strong>Game Intelligence</strong><br>Develop basketball IQ, confidence, and decision-making on and off the court.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINING PLANS SECTION -->
+<section class="bg-gray text-center">
+  <div class="container">
+    <h2>Training Plans</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Player Plan</h3>
+        <ul>
+          <li>AI video analysis & personalized drills</li>
+          <li>Weekly vertical jump & speed workouts</li>
+          <li>Weighted core & strength training</li>
+          <li>Posture & knee/hip correction exercises</li>
+          <li>Progress tracking dashboard</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Coach Plan</h3>
+        <ul>
+          <li>Player management dashboard</li>
+          <li>Team performance & analytics</li>
+          <li>Video analysis tools for drills and games</li>
+          <li>Customizable player development plans</li>
+          <li>Communication & feedback tools</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section class="text-center">
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Player Plan</h3>
+        <p><strong>$29/month</strong></p>
+        <ul>
+          <li>Full AI training & analysis</li>
+          <li>All drills & workout plans</li>
+          <li>Progress tracking</li>
+        </ul>
+        <button class="btn-primary">Sign Up</button>
+      </div>
+      <div class="card">
+        <h3>Coach Plan</h3>
+        <p><strong>$79/month</strong></p>
+        <ul>
+          <li>Full team & player analytics</li>
+          <li>Video analysis tools</li>
+          <li>Customizable team plans</li>
+        </ul>
+        <button class="btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS SECTION -->
+<section class="bg-gray text-center">
+  <div class="container">
+    <h2>How ShotCraft Works</h2>
+    <div class="grid grid-3">
+      <div class="card"><strong>Step 1:</strong> Upload your video workouts and game footage.</div>
+      <div class="card"><strong>Step 2:</strong> AI analyzes form, jumps, speed, and shooting accuracy.</div>
+      <div class="card"><strong>Step 3:</strong> Receive personalized drills, workouts, and feedback for improvement.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="bg-blue text-center">
+  <div class="container">
+    <h2>Your Game. Upgraded.</h2>
+    <p>Start training smarter and take your performance to the next level with ShotCraft.</p>
+    <button class="btn-primary">Get Started</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+  <p>ShotCraft is an AI-powered basketball and athletic performance platform built to help players train smarter and improve faster.</p>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Privacy Policy</a>
+  </div>
+  <p>© 2025 ShotCraft. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
